@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+      <meta charset='utf-8'>
+      <title>Engineers Without Borders</title>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link href='https://fonts.googleapis.com/css?family=Proxima+Nova' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
+      <link rel='stylesheet' type='text/css' href='styles/style.css'>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script src='scripts/main.js'></script>    <script type="text/javascript">
+
+            $(document).ready(function(){
+                $("#contact").addClass("active");
+                $(".nav-toggle").click(function(){
+                    $(".topnav .nav-right").slideToggle();
+                });
+            })
+            window.onresize=function(){
+                var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                if (width>1200){
+                    $(".topnav .nav-right").css('display', '');
+                }
+            }
+
+    </script>
+
+</head>
+
+<body class="contact">
+
+    <div class='topnav blue'>
+        <div class='nav-head'>
+            <button type='button' class='nav-toggle center-h'>
+                    <span class='icon'></span>
+                    <span class='icon'></span>
+                    <span class='icon'></span>
+      </button>
+      <ul class='nav-right'>
+               <li><a href='index.html' class='logo'><img class='logo' src='images/Official-logo.png' alt='logo'></a></li>
+        <!--  <a href='index.html'>Engineers Without Borders<br>
+              <em class='red'>Cornell University</em>
+              </a> -->
+                <li><a id='home' href='index.html'>ABOUT US</a></li>
+                <li><a id='subteams' href='subteams.html'>SUBTEAMS</a></li>
+                <li><a id='members' href='members.html'>MEMBERS</a></li>
+                <li><a id='sponsors' href='sponsors.html'>SPONSORS</a></li>
+                <li><a id='recruitment' href='recruitment.html'>RECRUITMENT</a></li>
+                <li><a id='contact' href='contact.html'>CONTACT</a></li>
+            </ul>
+        </div>
+      </div>
+    <div class = "banner container-fluid">
+        <h1 class="center center-h"><strong>CONTACT US</strong></h1>
+    </div>
+
+    <div id= "content">
+        <div class="container">
+                    <div class="shadow">
+                <div class="row main">
+                    <div class="col-md-3 col-lg-4 info">
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Ithaca, NY</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> Email: ewbcornell@gmail.com</p>
+                        <p><span></span></p>
+                    </div>
+
+                    <div class="col-md-8 col-lg-8">
+                        <form id="form" name="form" method="post">
+                            <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <input type="text" name="name" placeholder="Name" class="contact-form" required>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input type="email" name="email" placeholder="Email" class="contact-form" required>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-lg-12">
+                            <input type="text" name="subject" placeholder="Subject" class="contact-form" required>
+                            </div>
+                            </div>
+                            <textarea rows="6" name="content" class="contact-form" placeholder="message"  required></textarea>
+
+                            <div class="row">
+                            <div class="col-lg-12">
+                            <input type="submit" name='send' value="send" class="pull-right bb">
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <div class='botnav white'>
+            <div class='nav-head'>
+                <p class='center-h'>©2012-2018 Engineers Without Borders Cornell</p>
+            </div>
+            <ul class='nav-right'>
+                <li class='center-h'><a href='https://www.youtube.com/channel/UC3gHgRQ1OLOwzolN8N2YPNQ' target = '_blank'>Youtube</a></li>
+                <li class='center-h'><a href='https://twitter.com/ewbcornell?lang=en' target = '_blank'>Twitter</a></li>
+                <li class='left center-h'><a href='https://www.linkedin.com/groups/5075095' target = '_blank'>LinkedIn</a></li>
+                <li class='center-h'><a href='https://www.instagram.com/ewbcornell/' target = '_blank'>Instagram</a></li>
+                <li class='center-h'><a href='https://www.facebook.com/EWBCornell/?fref=ts' target = '_blank'>Facebook</a></li>
+            </div>
+        </div>
+
+</body>
+</html>

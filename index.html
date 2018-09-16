@@ -1,0 +1,185 @@
+<!-- <?php
+    session_start();
+    $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+
+?> -->
+
+<!DOCTYPE html>
+
+
+<html lang = "en">
+
+<head>
+    <!-- <?php
+      include_once 'includes/common.php';
+      commonHeader();
+    ?>  -->
+    <!-- from php -->
+    <meta charset='utf-8'>
+    <title>Engineers Without Borders</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=Proxima+Nova' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='styles/style.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='scripts/main.js'></script>
+
+    <button class="hamburger"> &#9776; </button>
+    <script type="text/javascript">
+
+            $(document).ready(function(){
+                $("#home").addClass("active");
+                $(".nav-toggle").click(function(){
+                    $(".topnav .nav-right").slideToggle();
+                });
+            })
+
+            window.onresize=function(){
+                var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                if (width>1200){
+                    $(".topnav .nav-right").css('display', '');
+                }
+            }
+
+    </script>
+
+
+</head>
+
+<body>
+    <!-- <?php
+        commonTop();
+    ?>  -->
+    <div class='topnav blue'>
+        <div class='nav-head'>
+            <button type='button' class='nav-toggle center-h'>
+                    <span class='icon'></span>
+                    <span class='icon'></span>
+                    <span class='icon'></span>
+	          </button>
+	    <ul class='nav-right'>
+	             <li><a href='index.html' class='logo'><img class='logo' src='images/Official-logo.png' alt='logo'></a></li>
+        <!--  <a href='index.html'>Engineers Without Borders<br>
+              <em class='red'>Cornell University</em>
+              </a> -->
+                <li><a id='home' href='index.html'>ABOUT US</a></li>
+                <li><a id='subteams' href='subteams.html'>SUBTEAMS</a></li>
+                <li><a id='members' href='members.html'>MEMBERS</a></li>
+                <li><a id='sponsors' href='sponsors.html'>SPONSORS</a></li>
+                <li><a id='recruitment' href='recruitment.html'>RECRUITMENT</a></li>
+                <li><a id='contact' href='contact.html'>CONTACT</a></li>
+            </ul>
+      </div>
+    </div>
+        <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('styles/images/hike.jpg');">
+                    <h1 class="center center-h white"><strong>ENGINEERS WITHOUT BORDERS</strong></h1>
+                </div>
+
+
+
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/bridge3.JPG'); ">
+                    <h1 class="center center-h white"><strong>ENGINEERS WITHOUT BORDERS</strong></h1>
+                </div>
+
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('styles/images/bridge.JPG');">
+                    <h1 class="center center-h white"><strong>ENGINEERS WITHOUT BORDERS</strong></h1>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    <!--- banner>
+    <div class = "banner container-fluid">
+        <h1 class="center center-h"><strong>ENGINEERS WITHOUT BORDERS</strong></h1>
+    </div>
+    < !-->
+
+    <div id = "content">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="col-lg-offset-1 col-md-offset-1 wider blue" style="font-weight:bolder;">ABOUT US</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wider col-lg-offset-1 col-md-offset-1">
+
+                        <p class="justify">
+                        Engineers Without Borders - Cornell is a group of passionate and highly motivated students who aim to create long-lasting solutions to problems in international communities. Members are given the opportunity to nurture their creative and technical expertise by designing and implementing sustainable engineering projects. Through collaboration with communities in developing countries around the world, our members are exposed to diverse cultures while gaining academic experience outside of the classroom environment.
+                        </p>
+                        <P class="justify">Our growing team of 52 dedicated students includes undergraduate and
+                        graduate students from several of Cornell’s colleges including the College of
+                        Engineering, the College of Arts and Sciences, and the College of Agriculture
+                        and Life Sciences. Our network also extends beyond Cornell’s campus to over
+                        250 EWB chapters.
+                        </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wider">
+                    <img class="img-fluid" src="images/full_team.jpg" alt="team">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7">
+
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- <?php
+        commonBottom();
+    ?> -->
+
+    <div class='botnav white'>
+          <div class='nav-head'>
+              <p class='center-h'>©2012-2017 Engineers Without Borders Cornell</p>
+          </div>
+          <ul class='nav-right'>
+              <li class='center-h'><a href='https://www.youtube.com/channel/UC3gHgRQ1OLOwzolN8N2YPNQ' target = '_blank'>Youtube</a></li>
+              <li class='center-h'><a href='https://twitter.com/ewbcornell?lang=en' target = '_blank'>Twitter</a></li>
+              <li class='left center-h'><a href='https://www.linkedin.com/groups/5075095' target = '_blank'>LinkedIn</a></li>
+              <li class='center-h'><a href='https://www.instagram.com/ewbcornell/' target = '_blank'>Instagram</a></li>
+              <li class='center-h'><a href='https://www.facebook.com/EWBCornell/?fref=ts' target = '_blank'>Facebook</a></li>
+          </div>
+      </div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+
+</body>
+
+</html>
