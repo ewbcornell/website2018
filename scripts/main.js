@@ -91,7 +91,14 @@ $(window).resize(function(){
 	collapseCurrent();
 });
 
+
+var clickDisabled = false;	//boolean used for preventing overclicking and displaying multiple bios
 function collapseAllBut(ref){
+
+	if(clickDisabled){
+		return;
+	}
+
 	var perrow = getperrow();
 	var team = $("#team").get(0);
 	var after = Math.min((Math.floor(ref/perrow)+1)*perrow-1, data_highest_bio_num);
@@ -118,7 +125,7 @@ function collapseAllBut(ref){
 		var bioToInsertAfter = $('#bioholder_' + after).get(0);
 		bioToInsertAfter.parentNode.insertBefore(div, bioToInsertAfter.nextSibling);
 		$('#active-bio').collapse('show');
-		$('#active-bio').on('hiden', function() {
+		$('#active-bio').on('hidden', function() { //changed hiden to hidden
 			$(this).remove();
 		});
 	}
@@ -129,4 +136,7 @@ function collapseAllBut(ref){
 		ref: ref,
 		div: div
 	};
+
+	clickDisabled = true;
+	setTimeout(function(){clickDisabled = false;}, 300); //Prevent multiple bios from displaying
 }
